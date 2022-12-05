@@ -37,7 +37,7 @@ pub struct DebugLogger {
 
 static EMPTY_STRING: String = String::new();
 impl DebugLogger {
-    pub const fn new() -> Self {
+    pub fn new() -> Self {
         Self { stack: Mutex::new(Vec::new()) }
     }
 
